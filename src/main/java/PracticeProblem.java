@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * File Name: errors.java
  * Author: Mr. Kalisz
@@ -8,7 +10,7 @@
 
 class PracticeProblem {
 
-	static Scanner s = new Scanner();
+	static Scanner s = new Scanner(System.in);
   	public static void main(String[] args) {
 		
 		q1();
@@ -18,41 +20,53 @@ class PracticeProblem {
   	}
   	public static void q1() {
 		// From input, recieve two integers from the user and add them together.  Output the result.
+		int num1;
+	    int num2; int num3;
+		System.out.print("Input a number: ");
+		num1 = s.nextInt();
+		s.nextLine();
+		System.out.print("Input a number: ");
+		num2 = s.nextInt();
+		s.nextLine();
+		num3 = num1 + num2;
 
-		System.out.println("Input a number: ");
-		num1 = s.nextInt;
-		System.out.println("Input a number: ");
-		num2 = s.nextInt;
-
-		System.out.println(num + num2);
+		System.out.println(num3);
   	}
 
 	public static void q2() {
 		// From input recieve two integers.  Output the quotient rounded down.
+		int num1;
+	    int num2;
 		
-		System.out.println("Input a number: ");
-		num1 = s.nextLine();
-		System.out.println("Input a number: ");
-		num2 = s.nextLine();
+		System.out.print("Input a number: ");
+		num1 = s.nextInt();
+		s.nextLine();
+		System.out.print("Input a number: ");
+		num2 = s.nextInt();
+		s.nextLine();
 		
-		system.out.println(num1/num2);
+		System.out.println(num1/num2);
 	}
 
 	public static void q3() {
 		// Output the phrase "hello "Mr. Kalisz" have you seen my work yet?"
 		
-		System.out.println(hello "Mr. Kalisz" have you seen my work yet?);
+		System.out.println("hello \"Mr. Kalisz\" have you seen my work yet?");
 	}
 
 	public static void q4() {
 		// From input recieve two numbers (can be decimal fractions).  
 		// Output the first number plus two, then multiplied by the second number.
+		double num1;
+	    double num2;
 		
-		System.out.println("Input a number: ");
-		s.nextInt();
-		System.out.println("Input a number: ");
-		num2 = s.nextInt();
+		System.out.print("Input a number: ");
+		num1 = s.nextDouble();
+		s.nextLine();
+		System.out.print("Input a number: ");
+		num2 = s.nextDouble();
+		s.nextLine();
 		
-		System.out.println(num1 + 2 * num2)
+		System.out.println((num1 + 2) * num2);
 	}
 }
